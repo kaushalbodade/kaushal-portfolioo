@@ -1,0 +1,155 @@
+/* -----------------------------------------------------
+   GLOBAL / BODY
+----------------------------------------------------- */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 56px; /* For fixed-top navbar */
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+/* -----------------------------------------------------
+   HERO SECTION
+----------------------------------------------------- */
+#hero {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    padding: 100px 20px;
+    margin-bottom: 0;
+}
+
+#hero h1 {
+    font-weight: 700;
+}
+
+#hero .rounded-circle {
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* -----------------------------------------------------
+   NAVBAR
+----------------------------------------------------- */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+}
+
+/* -----------------------------------------------------
+   SECTION SPACING
+----------------------------------------------------- */
+section {
+    padding: 60px 0;
+}
+
+/* -----------------------------------------------------
+   SKILLS ICONS
+----------------------------------------------------- */
+#skills i {
+    color: #007bff;
+}
+
+/* -----------------------------------------------------
+   PROJECT CARDS
+----------------------------------------------------- */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* -----------------------------------------------------
+   FOOTER
+----------------------------------------------------- */
+footer {
+    background-color: #212529;
+}
+
+/* -----------------------------------------------------
+   TAG / PILL STYLE (FOR PROJECT DETAIL PAGES)
+----------------------------------------------------- */
+.tech-pill {
+    display: inline-block;
+    background-color: #e2e6ea;
+    color: #495057;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin: 5px;
+}
+
+/* -----------------------------------------------------
+   CASE STUDY PAGE HEADER
+----------------------------------------------------- */
+.project-header {
+    background-color: #f8f9fa;
+    padding: 80px 0 40px;
+    margin-top: 56px;
+}
+
+.section-box {
+    background-color: #ffffff;
+    border-left: 5px solid #007bff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* -----------------------------------------------------
+   RESPONSIVE FIXES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+
+    #hero {
+        padding: 70px 15px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .nav-item {
+        padding: 0 6px;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+/* -----------------------------------------------------
+   SMALL SCREENS (Phone)
+----------------------------------------------------- */
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 1.9rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+}

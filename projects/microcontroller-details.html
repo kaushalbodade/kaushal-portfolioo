@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Custom Microcontroller Board | Kaushal Bodade</title>
+
+    <!-- Bootstrap + Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="../index.html">KB</a>
+        <div id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="project-header text-center">
+        <div class="container">
+            <h1 class="display-4">Microcontroller Board Design & Fabrication</h1>
+            <p class="lead">
+                End-to-end development of a functional Nuvoton N76E003 microcontroller board using KiCad.
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section class="container py-5">
+
+        <div class="row">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-lg-8">
+                <h2 class="mb-4">Project Overview</h2>
+
+                <div class="section-box">
+                    <p>
+                        This project focused on building a complete microcontroller board from scratch, covering 
+                        schematic design, PCB layout, fabrication, soldering, and final testing. The objective was 
+                        to understand the full hardware development cycle and produce a reliable, working board.
+                    </p>
+                    <p>
+                        The selected microcontroller was the <strong>Nuvoton N76E003</strong>, an 8051-based IC widely used 
+                        in industrial applications. The board was successfully programmed and tested using the 
+                        Keil µVision IDE and Nu-Link programmer.
+                    </p>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-lg-4">
+                <h2 class="mb-4">Key Information</h2>
+
+                <div class="section-box">
+                    <p><strong>Timeline:</strong> June 2025 – July 2025</p>
+                    <p><strong>Mentor:</strong> Mr. Navlesh Gawale</p>
+                    <p><strong>Team Size:</strong> 4 Members</p>
+
+                    <p><strong>Skills Used:</strong></p>
+                    <span class="tech-pill">KiCad</span>
+                    <span class="tech-pill">PCB Design</span>
+                    <span class="tech-pill">Soldering</span>
+                    <span class="tech-pill">Keil µVision</span>
+                    <span class="tech-pill">Gerber Generation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROCESS STEPS -->
+        <h2 class="text-center mt-5 mb-4">Design & Fabrication Workflow</h2>
+
+        <div class="row">
+
+            <!-- STEP 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/micro-schematic.jpg" class="card-img-top" alt="KiCad Schematic">
+                    <div class="card-body">
+                        <h5 class="card-title">1. Schematic & PCB Layout</h5>
+                        <p class="card-text">
+                            Designed the complete schematic and PCB layout in KiCad. After verification and DRC checks, 
+                            generated the required Gerber files for fabrication.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-outline-dark" target="_blank">
+                            <i class="fas fa-code"></i> View KiCad Files
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/microcontroller-pcb.jpg" class="card-img-top" alt="Fabricated PCB">
+                    <div class="card-body">
+                        <h5 class="card-title">2. Physical Fabrication</h5>
+                        <p class="card-text">
+                            Fabrication included laminating, etching, drilling, applying solder mask, and silkscreen 
+                            printing. Components were soldered with precision to avoid short circuits and ensure reliability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/micro-results.jpg" class="card-img-top" alt="Final Working Board">
+                    <div class="card-body">
+                        <h5 class="card-title">3. Testing & Programming</h5>
+                        <p class="card-text">
+                            Used the Nu-Link programmer along with Keil µVision IDE to upload and test firmware. 
+                            Successfully executed UART communication and LED blinking programs.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-outline-primary" target="_blank">
+                            <i class="fas fa-microchip"></i> View Test Codes
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div class="text-center mt-5">
+            <a href="../index.html#projects" class="btn btn-lg btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to All Projects
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Kaushal Bodade — Built with HTML, CSS & Bootstrap</p>
+    </footer>
+
+</body>
+</html>
